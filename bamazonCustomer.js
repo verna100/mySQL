@@ -16,7 +16,6 @@ var connection = mysql.createConnection({
 connection.connect(function(err) {
   if (err) throw err;
   console.log("connected successfully");
-  // afterConnection();
   queryProducts();
   // afterConnection();
 });
@@ -37,7 +36,7 @@ function inputOne() {
         {
           name:"item",
           type:"input",
-          message: "Please enter the id number of the item you'd like to purchase",
+          message: "Please enter the number of the item you'd like to purchase",
           validate: function(value) {
           if (isNaN(value) === false) {
             return true;

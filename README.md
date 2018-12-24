@@ -33,19 +33,26 @@ Then create a Node application called bamazonCustomer.js. Running this applicati
 
 *The second message should ask how many units of the product they would like to buy.
 
-**Screenshot: (shows successful connection to mySQL and the table being read, list of items, questions being asked of the customer.
+**Screenshot: (shows successful connection to mySQL and the table being read, list of items, questions being asked of the customer. Once the update goes through, show the customer the total cost of their purchase.
 
-<img width="927" alt="screen shot 2018-12-22 at 9 47 05 pm" src="https://user-images.githubusercontent.com/24796624/50380365-2d065800-0633-11e9-823d-260fec94d784.png">
-
-
+<img width="771" alt="screen shot 2018-12-23 at 10 53 05 pm" src="https://user-images.githubusercontent.com/24796624/50390483-99518c00-0705-11e9-915a-1e5946189821.png">
 
 
-******still working on getting this portion up and running*****
 Once the customer has placed the order, your application should check if your store has enough of the product to meet the customer's request.
 
 If not, the app should log a phrase like Insufficient quantity!, and then prevent the order from going through.
 
+**Screenshot (shows error message when customer picks item whose quantity does not match the stock quantity)
+
+<img width="668" alt="screen shot 2018-12-23 at 10 58 18 pm" src="https://user-images.githubusercontent.com/24796624/50390542-488e6300-0706-11e9-867b-95ce1679981b.png">
+
+
 However, if your store does have enough of the product, you should fulfill the customer's order.
 
-This means updating the SQL database to reflect the remaining quantity.
-Once the update goes through, show the customer the total cost of their purchase.
+This means updating the SQL database to reflect the remaining quantity. (see screeshot below- 2nd database pic, to see the database being updated)
+
+
+
+**Screenshot: (shows items being removed from database inventory. See 1st picture for original amounts.)
+
+<img width="492" alt="screen shot 2018-12-23 at 10 54 15 pm" src="https://user-images.githubusercontent.com/24796624/50390496-bab27800-0705-11e9-80a5-6dfe241fc35b.png">
